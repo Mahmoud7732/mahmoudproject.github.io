@@ -1,0 +1,203 @@
+/* set my colors  */
+:root {
+  --main-color: #04bbe7;
+  --socond-color: #e86781;
+  --font-color: #525e62;
+}
+/* no margin  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-auto-rows: minmax(120px, auto);
+  grid-gap: 10px;
+  grid-template-areas:
+    "head head head head head head head head head head"
+    "content content content content content content content content content side"
+    "content content content content content content content content content side"
+    "content content content content content content content content content side"
+    "content content content content content content content content content side"
+    "content content content content content content content content content side";
+}
+.box {
+  text-align: center;
+  /* background-color: rgb(211, 159, 159); */
+}
+.head {
+  grid-area: head;
+  padding: 10px;
+}
+.content {
+  grid-area: content;
+  border: 1px solid var(--socond-color);
+  border-radius: 10px;
+  overflow: auto;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(250px, auto);
+}
+.side {
+  grid-area: side;
+  border: 1px solid var(--socond-color);
+  border-radius: 10px;
+  overflow: auto;
+  height: 600px;
+}
+body {
+  background-color: white;
+  text-transform: capitalize;
+}
+.doctor {
+  color: #04bbe7;
+}
+.web {
+  color: #e86781;
+}
+
+h2 {
+  display: flex;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 400;
+}
+.head-image {
+  width: 40px;
+  height: 40px;
+  margin-top: 18px;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: 2s;
+}
+.head-image:hover {
+  transform: rotateZ(360deg);
+}
+.container .doctor-web {
+  text-decoration: none;
+}
+.container .title {
+  display: flex;
+  justify-content: space-between;
+}
+h4 {
+  cursor: pointer;
+
+  color: var(--font-color);
+  border-bottom: 1px solid var(--main-color);
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+h4:hover {
+  color: var(--socond-color);
+}
+h3 {
+  color: var(--font-color);
+
+  padding-bottom: 10px;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+h3:hover {
+  transform: rotate3d(2, 0, 0.5, 360deg);
+  transition: 2s;
+  color: #e86781;
+}
+hr {
+  width: 300px;
+  height: 3px;
+  color: var(--font-color);
+  background-color: var(--font-color);
+  margin-top: -15px;
+  border-radius: 40%;
+}
+h5 {
+  font-size: 24px;
+  text-align: center;
+  font-style: italic;
+  color: var(--main-color);
+  font-weight: 100;
+}
+.content-image {
+  width: 600px;
+  height: 450px;
+  border-radius: 20%;
+}
+.most {
+  color: var(--socond-color);
+}
+
+.doctor-info1 .name {
+  color: var(--font-color);
+  font-size: 20px;
+  left: 260px;
+  top: 230px;
+  font-weight: bolder;
+}
+
+.doctor-info2 .name {
+  color: var(--font-color);
+  font-size: 20px;
+
+  left: 260px;
+  top: 230px;
+  font-weight: bolder;
+}
+
+.dr-photo {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  font-weight: bolder;
+  left: 240px;
+  top: 20px;
+}
+.description {
+  top: 90px;
+  font-size: 19px;
+  left: 50px;
+  color: var(--font-color);
+  margin-top: 15px;
+}
+.chat {
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-color: var(--main-color);
+  color: #525e62;
+  top: 430px;
+  font-size: 19px;
+  padding-top: 9px;
+  border-radius: 20px;
+  left: 280px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  transition: 1.5s;
+}
+.chat:hover {
+  color: white;
+}
+.space {
+  height: 30px;
+  background-color: #e86781;
+  position: sticky;
+  top: 0;
+}
+.check {
+  display: none;
+}

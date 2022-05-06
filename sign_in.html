@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <!-- title icon -->
+    <link rel="icon" href="./images/log-in-outline.svg" type="image/x-icon">
+    <!-- main template css file -->
+    <link rel="stylesheet" href="./css/sign_in.css">
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;600;800&display=swap" rel="stylesheet">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body>
+  <div class="parent">
+    <!-- head -->
+    <div class="container">
+      <a
+      href="https://maromohamedsalah.github.io/Doctor_wab/"
+      class="doctor-web"
+      target="_self"
+    >
+      <h1>
+        <span class="doctor">doctor</span><span class="web">web</span>
+      </h1>
+    </a>
+    <!-- form  -->
+    <div class="container">
+      <form name="myForm">
+        <h2>sign in</h2>
+        <div class="new-link">
+        <span class="new">new to doctor web?</span>
+        <a href="https://maromohamedsalah.github.io/Doctor_wab/sign%20up/index.html" class="sign-up">creat an acount</a>
+      </div>
+        <input type="text" class="user" placeholder="user name" name="user" >
+        <input type="password" class="password"  placeholder="password" name="pass" >
+<div class="keep">
+  <input type="checkbox" id="check" class="check">
+        <label for="check">keep me signed in on this device</label>
+</div>
+        <a   class="button" onclick="myFunction()" >sign in</a>
+        <p class="or">or sign in with</p>
+        <div class="links">
+          <a href="https://ar-ar.facebook.com/" class="social">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/i/flow/login" class="social">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.google.com/?hl=ar" class="social">
+            <i class="fab fa-google"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+      <script>
+          function myFunction() {
+            var x=document.forms["myForm"]["user"].value;
+           
+            var y=document.forms["myForm"]["pass"].value;
+            if ( x.length == 0 && y.length ==0 )
+    {
+        
+        alert("must input a valid user name and a valid password");
+       return;
+    }
+    if ( x.length ==0)
+    {
+        alert("Must input a valid user name ");
+        return;
+    }
+    if ( y.length == 0 )
+    {
+        alert("Must input a valid password");
+        return;
+    }
+    else
+    {
+        
+        alert("You have been successfully signed in");
+        window.open("https://maromohamedsalah.github.io/Doctor_wab/", "_self")
+    }
+          }
+      </script>
+    
+</body>
+</html>

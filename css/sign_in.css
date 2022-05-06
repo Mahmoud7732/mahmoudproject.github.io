@@ -1,0 +1,164 @@
+/* set my colors  */
+:root {
+  --main-color: #0094ff;
+  --socond-color: #e86781;
+  --font-color: #525e62;
+  --main1-color: #04bbe7;
+}
+/* no margin  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+/* my container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  position: relative;
+}
+/* head */
+.doctor-web {
+  text-decoration: none;
+}
+h1 {
+  font-weight: lighter;
+}
+.doctor {
+  color: var(--main1-color);
+  margin-right: 3px;
+  font-size: 43px;
+}
+.web {
+  color: var(--socond-color);
+  font-size: 43px;
+}
+/* end head */
+/* start body */
+body {
+  background-image: url(../images/nurse-man-holds-heart-isolated-white-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+/* end body */
+/* start form */
+form {
+  width: 500px;
+}
+h2 {
+  font-size: 40px;
+  color: var(--font-color);
+  font-weight: bolder;
+  padding-left: 128px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  transition: 1s;
+}
+h2:hover {
+  color: var(--socond-color);
+  transition: 1s;
+}
+input[type="text"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--main-color);
+  width: 395px;
+  height: 60px;
+  color: var(--main-color);
+  font-size: 21px;
+  padding-left: 4px;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+.new {
+  font-size: 1.84vw;
+  color: var(--font-color);
+  font-weight: lighter;
+}
+.sign-up {
+  text-decoration: none;
+
+  color: var(--socond-color);
+  font-weight: lighter;
+  font-size: 1.84vw;
+}
+.sign-up:hover {
+  text-decoration: underline;
+
+  color: var(--main-color);
+  font-weight: 500;
+}
+.new-link {
+  width: 400px;
+  padding-bottom: 35px;
+}
+label {
+  font-size: 21px;
+  color: var(--font-color);
+}
+.check {
+  width: 18px;
+  height: 18px;
+  vertical-align: center;
+}
+.keep {
+  padding-bottom: 55px;
+  padding-top: 20px;
+}
+.button {
+  width: 396px;
+  background-color: var(--main-color);
+  color: #33383a;
+  transition: 1.5s;
+  font-size: 26px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 5px;
+}
+.button:hover {
+  color: white;
+  transition: 1.5s;
+}
+.or {
+  color: var(--font-color);
+  margin-left: 140px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 19px;
+}
+.social {
+  font-size: 33px;
+  color: var(--font-color);
+  text-decoration: none;
+  margin-left: 72px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.links {
+  margin-top: 30px;
+  width: 395px;
+}
+.social:hover {
+  transition: 2s;
+  border-bottom: 2px solid var(--main1-color);
+  transform: rotate(360deg);
+}
+/* end form */

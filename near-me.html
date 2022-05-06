@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Near Me</title>
+    <!-- title icon -->
+    <link
+      rel="icon"
+      href="./images/—Pngtree—location icon creative design template_5259016.png"
+      type="image/png"
+    />
+    <!-- main template css file -->
+    <link rel="stylesheet" href="./css/near-me.css" />
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box head">
+        <div class="title">
+          <a
+            href="https://maromohamedsalah.github.io/Doctor_wab/"
+            class="doctor-web"
+            target="_self"
+          >
+            <h2>
+              <span class="doctor">doctor</span><span class="web"> web</span>
+            </h2>
+          </a>
+          <img
+            class="head-image"
+            src="./images/—Pngtree—location icon creative design template_5259016.png"
+            alt="contact"
+          />
+        </div>
+        <h3>Medical specialties</h3>
+        <hr />
+      </div>
+      <div class="box side">
+        <div class="space"></div>
+        <h4 class="side-element" onclick="myFunction()">Endocrinology</h4>
+        <h4 class="side-element" onclick="myFunction()">Cardiology</h4>
+        <h4 class="side-element" onclick="myFunction()">Internal Medicine</h4>
+        <h4 class="side-element" onclick="myFunction()">Gastroenterology</h4>
+        <h4 class="side-element" onclick="myFunction()">
+          Obstetrics and Gynecology
+        </h4>
+        <h4 class="side-element" onclick="myFunction()">Ophthalmology</h4>
+        <h4 class="side-element" onclick="myFunction()">Pediatrics</h4>
+        <h4 class="side-element" onclick="myFunction()">Ophthalmology</h4>
+        <h4 class="side-element" onclick="myFunction()">Neurology</h4>
+        <h4 class="side-element" onclick="myFunction()">Oncology</h4>
+        <h4 class="side-element" onclick="myFunction()">Hematology</h4>
+        <h4 class="side-element" onclick="myFunction()">Emergency medicine</h4>
+        <h4 class="side-element" onclick="myFunction()">Urology</h4>
+        <h4 class="side-element" onclick="myFunction()">
+          General Practitioner
+        </h4>
+        <h4 class="side-element" onclick="myFunction()">nephrology</h4>
+        <h4 style="border: none; margin: 0" onclick="myFunction()">
+          Dermatology
+        </h4>
+      </div>
+      <div class="box content">
+        <div class="welcome" id="welcome">
+          <h5>
+            We have a large team of the most<br /><span class="most">
+              skilled doctors </span
+            >in the world
+          </h5>
+          <img
+            class="content-image"
+            src="./images/pexels-rodnae-productions-6129507.jpg"
+            alt="contact"
+          />
+        </div>
+        <div class="check" id="check">
+          <div class="doctor-info1">
+            <img
+              src="./images/istockphoto-1161336374-612x612.jpg"
+              class="dr-photo"
+              alt="contact"
+            />
+            <p class="name">dr / john robert</p>
+            <div>
+              <p class="description">
+                Consultant Ophthalmologist,<br />
+                Bachelor of Medicine from Harvard University,<br />
+                Fellow of European Ophthalmology Surgeons
+              </p>
+              <a href="../contact us/contact_us.html" class="chat"
+                >contact me</a
+              >
+            </div>
+          </div>
+          <hr />
+          <div class="doctor-info2">
+            <img
+              src="./images/pexels-antoni-shkraba-5215024.jpg"
+              class="dr-photo"
+              alt="contact"
+            />
+            <p class="name">dr / emillia luke</p>
+            <div>
+              <p class="description">
+                Oncology Consultant,<br />
+                Bachelor of Medicine from stanford University,<br />
+                Fellow of European Oncology Surgeons
+              </p>
+              <a href="../contact us/contact_us.html" class="chat"
+                >contact me</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("check").style.display = "block";
+        document.getElementById("check").style.transition = "2.5s";
+        document.getElementById("welcome").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

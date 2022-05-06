@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <!-- title icon -->
+    <link
+      rel="icon"
+      href="./images/icons8-contact-us-64.png"
+      type="image/x-icon"
+    />
+    <!-- main template css file -->
+    <link rel="stylesheet" href="./css/contact_us.css" />
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <div class="container">
+        <div class="title">
+          <a
+            href="https://maromohamedsalah.github.io/Doctor_wab/"
+            class="doctor-web"
+            target="_self"
+          >
+            <h2>
+              <span class="doctor">doctor</span><span class="web"> web</span>
+            </h2>
+          </a>
+          <img src="./images/icons8-contact-us-64.png" alt="contact" />
+        </div>
+        <div class="contactus-section">
+          <h2 class="contactus-word">Contact Us</h2>
+          <hr class="line" />
+        </div>
+        <div class="form">
+          <form name="myForm">
+            <input
+              type="text"
+              class="user-info"
+              placeholder="name"
+              name="user"
+            />
+            <input
+              type="mail"
+              class="user-info"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <input
+              type="tel"
+              class="user-info"
+              name="tele"
+              placeholder="phone number-ex(+201234567890)"
+            />
+            <input
+              type="text"
+              class="user-info"
+              name="sub"
+              placeholder="subject"
+            />
+            <textarea
+              class="text-area"
+              placeholder="your question..."
+              name="quest"
+            ></textarea>
+          </form>
+          <div class="notes">
+            <h3>Emergency</h3>
+            <h4>Headquarters:</h4>
+            <p>52 Church Road.London.SW38 0KE, United Kingdom</p>
+            <h4>Contact us in an emergency:</h4>
+            <p>+44 20 7946 0612</p>
+          </div>
+        </div>
+        <a type="submit" onclick="myFunction()" class="button0">send</a>
+      </div>
+    </div>
+    <div class="load" id="load">
+      <div class="shake"><i class="fas fa-handshake"></i></div>
+      <div>
+        Thank you for contacting us,<br />
+        we will reply to you soon
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.forms["myForm"]["user"].value;
+
+        var nums = /^[0-9]+$/;
+
+        var y = document.forms["myForm"]["mail"].value;
+        var z = document.forms["myForm"]["tele"].value;
+        var n = document.forms["myForm"]["sub"].value;
+        var k = document.forms["myForm"]["quest"].value;
+
+        var patt = new RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$");
+        if (
+          x.length == 0 &&
+          y.length == 0 &&
+          !z.match(nums) &&
+          n.length == 0 &&
+          k.length == 0
+        ) {
+          alert("must input a valid values");
+          return;
+        }
+        if (x.length == 0) {
+          alert("Must input a valid user name");
+
+          return;
+        }
+        if (!y.match(patt)) {
+          alert("Must input a valid E-mail");
+
+          return;
+        }
+        if (!z.match(nums)) {
+          alert("Must input a valid phone number");
+
+          return;
+        }
+        if (n.length == 0) {
+          alert("Must input a valid subject");
+
+          return;
+        }
+        if (k.length == 0) {
+          alert("Must input a valid question");
+          return;
+        } else {
+          
+          
+          document.getElementById("parent").style.display = "none";
+          document.getElementById("load").style.display = "block";
+          
+          setTimeout(function () {
+            (window.location.href =
+              "https://maromohamedsalah.github.io/Doctor_wab/"),
+              "_self";
+          }, 3000);
+        }
+      }
+    </script>
+  </body>
+</html>
