@@ -62,11 +62,12 @@ h2 {
   padding-left: 128px;
   padding-top: 20px;
   padding-bottom: 30px;
-  transition: 1s;
+  transition: 1.8s;
 }
 h2:hover {
   color: var(--socond-color);
-  transition: 1s;
+  transform: rotate3d(2, 0, 0.5, 360deg);
+  
 }
 input[type="text"],
 input[type="password"] {
