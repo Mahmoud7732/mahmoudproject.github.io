@@ -35,7 +35,7 @@
             target="_self"
           >
             <h2>
-              <span class="doctor">doctor</span><span class="web"> web</span>
+              <span class="doctor" id="doctor" onmouseover="fun1()" onmouseout="fun2()">doctor</span><span class="web" id="web" onmouseover="fun1()" onmouseout="fun2()"> web</span>
             </h2>
           </a>
           <img src="./images/icons8-contact-us-64.png" alt="contact" />
@@ -95,6 +95,21 @@
       </div>
     </div>
     <script>
+         var doc =document.getElementById("doctor");
+          var web =document.getElementById("web");
+        function fun1(){
+          doc.style.transition =".5s";
+          web.style.transition =".5s";
+          doc.style.color ="#e86781";
+          web.style.color = "#04bbe7";
+        }
+        function fun2(){
+          doc.style.transition =".6s";
+          web.style.transition =".5s";
+          doc.style.color ="#04bbe7";
+          web.style.color = "#e86781";
+        }
+       
       function myFunction() {
         var x = document.forms["myForm"]["user"].value;
 
