@@ -37,7 +37,7 @@ body {
   color: #e86781;
 }
 .web::first-letter {
-transform: lowercase;
+text-transform: lowercase;
 }
 
 h2 {
