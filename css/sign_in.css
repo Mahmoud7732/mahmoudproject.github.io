@@ -62,11 +62,12 @@ h2 {
   padding-left: 128px;
   padding-top: 20px;
   padding-bottom: 30px;
-  transition: 1.8s;
+
 }
 h2:hover {
   color: var(--socond-color);
-  transform: rotate3d(2, 0, 0.5, 360deg);
+  transform: rotate(360deg);
+    transition: 1.8s;
   
 }
 input[type="text"],
