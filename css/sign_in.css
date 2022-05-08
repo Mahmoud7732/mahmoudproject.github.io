@@ -42,6 +42,9 @@ h1 {
   color: var(--socond-color);
   font-size: 43px;
 }
+.web::first-letter {
+  text-transform: capitalize;
+}
 /* end head */
 /* start body */
 body {
