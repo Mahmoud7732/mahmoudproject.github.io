@@ -43,7 +43,7 @@ h1 {
   font-size: 43px;
 }
 .web::first-letter {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 /* end head */
 /* start body */
