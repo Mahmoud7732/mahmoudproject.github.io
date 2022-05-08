@@ -66,10 +66,6 @@ body {
 .web {
   color: #e86781;
 }
-.web::first-letter {
-  text-transform:lowercase;
-}
-
 h2 {
   display: flex;
   cursor: pointer;
