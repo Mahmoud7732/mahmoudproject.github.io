@@ -66,15 +66,15 @@
   </div>
       <script>
         function hidedis() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
+  var o = document.getElementById("password");
+  if (o.type === "password") {
     document.getElementById("eye1").style.display = "none"
     document.getElementById("eye2").style.display = "inline"
-    x.type = "text";
+    o.type = "text";
   } else {
     document.getElementById("eye2").style.display = "none"
     document.getElementById("eye1").style.display = "inline"
-    x.type = "password";
+    o.type = "password";
   }
 }
           function myFunction() {
