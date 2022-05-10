@@ -36,13 +36,12 @@ h1 {
 .doctor {
   color: var(--main1-color);
   margin-right: 3px;
-  font-size: 36px;
+  font-size: 43px;
 }
 .web {
   color: var(--socond-color);
-  font-size: 36px;
+  font-size: 43px;
 }
-
 /* end head */
 /* start body */
 body {
@@ -63,13 +62,11 @@ h2 {
   padding-left: 128px;
   padding-top: 20px;
   padding-bottom: 30px;
-
+  transition: 1s;
 }
 h2:hover {
   color: var(--socond-color);
-  
-    transition: 1.8s;
-  
+  transition: 1s;
 }
 input[type="text"],
 input[type="password"] {
@@ -102,6 +99,7 @@ input[type="password"] {
   color: var(--main-color);
   font-weight: 500;
 }
+
 .new-link {
   width: 400px;
   padding-bottom: 35px;
@@ -163,5 +161,31 @@ label {
   transition: 2s;
   border-bottom: 2px solid var(--main1-color);
   transform: rotate(360deg);
+}
+.eye1 {
+  color: var(--font-color);
+  position: relative;
+  top: 3px;
+  left: -32px;
+
+  width: 9px;
+  height: 9px;
+}
+.eye1:hover {
+  cursor: pointer;
+  color: #33383a;
+}
+.eye2 {
+  color: var(--font-color);
+  position: relative;
+  top: 3px;
+  left: -32px;
+  display: none;
+  width: 9px;
+  height: 9px;
+}
+.eye2:hover {
+  cursor: pointer;
+  color: #33383a;
 }
 /* end form */
