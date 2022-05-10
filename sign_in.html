@@ -28,7 +28,7 @@
       target="_self"
     >
       <h1>
-        <span class="doctor" id="doctor" onmouseover="fun1()" onmouseout="fun2()">doctor</span><span class="web" id="web" onmouseover="fun1()" onmouseout="fun2()">Web</span>
+        <span class="doctor">doctor</span><span class="web">web</span>
       </h1>
     </a>
     <!-- form  -->
@@ -40,7 +40,10 @@
         <a href="https://maromohamedsalah.github.io/Doctor_wab/sign%20up/index.html" class="sign-up">creat an acount</a>
       </div>
         <input type="text" class="user" placeholder="user name" name="user" >
-        <input type="password" class="password"  placeholder="password" name="pass" >
+        
+        <input type="password" class="password" id="password" placeholder="password" name="pass" >
+        <span class="eye1" id="eye1" onclick="hidedis()" title="show password"><i class="fa-solid fa-eye-low-vision"></i></span>
+        <span class="eye2" id="eye2" onclick="hidedis()" title="hide password"><i class="fa-solid fa-eye"></i></span>
 <div class="keep">
   <input type="checkbox" id="check" class="check">
         <label for="check">keep me signed in on this device</label>
@@ -62,23 +65,20 @@
     </div>
   </div>
       <script>
-          var doc =document.getElementById("doctor");
-          var web =document.getElementById("web");
-        function fun1(){
-          doc.style.transition =".5s";
-          web.style.transition =".5s";
-          doc.style.color ="#e86781";
-          web.style.color = "#04bbe7";
-        }
-        function fun2(){
-          doc.style.transition =".6s";
-          web.style.transition =".5s";
-          doc.style.color ="#04bbe7";
-          web.style.color = "#e86781";
-        }
+        function hidedis() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    document.getElementById("eye1").style.display = "none"
+    document.getElementById("eye2").style.display = "inline"
+    x.type = "text";
+  } else {
+    document.getElementById("eye2").style.display = "none"
+    document.getElementById("eye1").style.display = "inline"
+    x.type = "password";
+  }
+}
           function myFunction() {
             var x=document.forms["myForm"]["user"].value;
-           
             var y=document.forms["myForm"]["pass"].value;
             if ( x.length == 0 && y.length ==0 )
     {
