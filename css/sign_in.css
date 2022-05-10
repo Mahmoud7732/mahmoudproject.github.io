@@ -36,11 +36,11 @@ h1 {
 .doctor {
   color: var(--main1-color);
   margin-right: 3px;
-  font-size: 37px;
+  font-size: 36px;
 }
 .web {
   color: var(--socond-color);
-  font-size: 37px;
+  font-size: 36px;
   
 }
 /* end head */
