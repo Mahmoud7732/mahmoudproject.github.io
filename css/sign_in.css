@@ -56,6 +56,9 @@ body {
     height: 100%;
 
 }
+.parent{
+  height:700px;
+}
 /* end body */
 /* start form */
 form {
@@ -88,7 +91,7 @@ input[type="password"] {
   margin-bottom: 35px;
 }
 .new {
-  font-size: 1.84vw;
+  font-size: 22px;
   color: var(--font-color);
   font-weight: lighter;
 }
@@ -97,7 +100,7 @@ input[type="password"] {
 
   color: var(--socond-color);
   font-weight: lighter;
-  font-size: 1.84vw;
+  font-size: 22px;
 }
 .sign-up:hover {
   text-decoration: underline;
