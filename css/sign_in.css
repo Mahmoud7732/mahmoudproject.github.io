@@ -17,10 +17,7 @@ html {
   scroll-behavior: smooth;
   margin: 0;
 }
-.parent{
-  height: 100vh;
-  position: absolute;
-}
+
 /* my container */
 .container {
   padding-left: 15px;
@@ -37,6 +34,7 @@ html {
 }
 h1 {
   font-weight: lighter;
+  padding-left:17px;
 }
 .doctor {
   color: var(--main1-color);
@@ -55,6 +53,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+    height: 100%;
+
 }
 /* end body */
 /* start form */
