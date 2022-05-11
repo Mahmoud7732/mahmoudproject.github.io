@@ -191,21 +191,20 @@ h3 {
   transition-delay: 0.5s;
 }
 #load div {
-  font-size: 44px;
+ font-size: 44px;
   width: 800px;
   height: 200px;
   color: white;
-  position: absolute;
-  top: 40%;
-  left: 19%;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 150px;
   line-height: 60px;
   word-spacing: 10px;
 }
 #load .shake {
-  font-size: 120px;
-  position: absolute;
-  top: 20%;
-  left: 18%;
+    font-size: 120px;
+ text-align: center;
+ margin: 0 auto;
+ padding-top: 150px;
   color: white;
 }
